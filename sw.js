@@ -1,4 +1,4 @@
-const CACHE='carpesanos-v21';
+const CACHE='carpesanos-v22';
 const CORE=[
   './',
   './index.html',

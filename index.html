@@ -186,7 +186,7 @@
     @media(max-width:850px){html,body{overflow:auto}.app{height:auto;min-height:100vh}.app-footer{position:static}.shelf-wrap{height:auto;max-height:none}.shelf{height:560px}.subject-shell{grid-template-columns:1fr}.subject-side{position:static;display:grid;grid-template-columns:140px 1fr;gap:16px}.subject-cover{height:180px}.stack{grid-column:1/-1;grid-template-columns:1fr 1fr}.hero{align-items:flex-start;flex-direction:column}.support-pill{white-space:normal}.file-grid{--cell-h:125px}.thumb{height:84px}}
     @media(max-width:560px){header{padding:0;height:auto;min-height:104px}.header-inner{padding:14px 12px;align-items:flex-start;flex-direction:column;gap:12px}.header-left-group,.header-right{width:100%}.header-sort-center{position:static;transform:none;width:100%;order:3}.header-sort-center .shelf-toolbar{width:100%;justify-content:space-between}.header-left-group{gap:12px}.brand h1{font-size:26px}.brand small{font-size:12px}.brand-mark{width:56px;height:56px}.new-large{padding:13px 18px;font-size:14px}main{padding:16px 12px 44px}.hero{flex-direction:column;align-items:flex-start}.hero-copy-main h2{font-size:34px}.hero-copy-main p{font-size:13px}.shelf-toolbar{width:100%}.subject-side{grid-template-columns:100px 1fr}.subject-cover{height:140px}.file-grid-shell{padding:7px}.file-grid{--cell-h:112px;--gap:7px}.thumb{height:75px}.file-name{font-size:9px}.file-info{padding:6px}}
 
-    /* v21 · intro + motion */
+    /* v22 · intro + motion */
     .startup-splash{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#0b64dc 0,#063b94 36%,#031d50 68%,#02122f 100%);opacity:1;visibility:visible;transition:opacity .38s ease,visibility .38s ease}
     .startup-core{position:relative;width:312px;height:312px;display:grid;place-items:center;transform:scale(1);opacity:1}
     .startup-logo{width:224px;height:224px;border-radius:52px;object-fit:cover;box-shadow:0 28px 76px rgba(0,16,62,.50),0 0 54px rgba(84,234,255,.30);animation:startupBreath .75s ease-in-out infinite alternate}
@@ -217,7 +217,7 @@
         .subject-cover.has-avatar .label,.subject-cover .label{display:none!important}
     @media (prefers-reduced-motion:reduce){.startup-spinner{animation:none}.startup-logo{animation:none}.startup-splash.exit .startup-core{animation:none;opacity:0}body.ui-ready .app,body.ui-ready .app-footer,body.ui-ready header .header-left-group,body.ui-ready header .header-right,body.ui-ready header .header-sort-center,body.ui-ready .shelf-wrap,.binder.entry-animate,.subjectViewEntry .subject-side,.subjectViewEntry .content-panel{animation:none!important;opacity:1!important;transform:none!important}}
 
-    /* v21 · shelf animation lifecycle + sidebar refinement */
+    /* v22 · shelf animation lifecycle + sidebar refinement */
     .subject-side{
       padding:14px;
       gap:10px;
@@ -338,7 +338,7 @@
     }
 
 
-    /* v21 · sidebar vertical hierarchy */
+    /* v22 · sidebar vertical hierarchy */
     .subject-profile-card{
       display:flex!important;
       flex-direction:column!important;
@@ -390,7 +390,7 @@
     }
 
 
-    /* v21 · CONFIGURAR must never invade the profile image */
+    /* v22 · CONFIGURAR must never invade the profile image */
     .subject-profile-card,
     .subject-summary,
     .linked-volumes,
@@ -421,7 +421,7 @@
     }
 
 
-    /* v21 */
+    /* v22 */
     .profile-static{cursor:default!important;user-select:none}
     .profile-static:hover{background:rgba(8,39,95,.46)!important}
     .settings-section{margin-top:18px;padding:14px;border:1px solid rgba(115,180,255,.16);border-radius:15px;background:linear-gradient(180deg,rgba(14,59,128,.52),rgba(6,31,78,.56))}
@@ -434,7 +434,7 @@
     audio.preview-media{width:min(760px,calc(100vw - 48px));min-height:54px;background:transparent;box-shadow:none}
 
 
-    /* v21 · public ready */
+    /* v22 · public ready */
     .public-info-section{padding-bottom:13px}
     .public-info-section .settings-section-copy strong{color:#eef8ff}
     .public-info-grid{display:grid;gap:8px;margin-top:10px}
@@ -526,7 +526,7 @@
     </section>
   </main>
 </div>
-<footer class="app-footer">© <a href="https://www.viandavisual.com" target="_blank" rel="noopener">Vianda Visual</a> 2026 · v21</footer>
+<footer class="app-footer">© <a href="https://www.viandavisual.com" target="_blank" rel="noopener">Vianda Visual</a> 2026 · v22</footer>
 
 <div class="modal-backdrop" id="modalBackdrop">
   <div class="modal">
@@ -668,7 +668,7 @@ function syncCurrentProjectUI(){const checked=!!$('#editCurrentProjectInput')?.c
   function exportBackup(){
     try{
       const subjects=state.subjects.map(({handle,...rest})=>rest);
-      const payload={app:'CARPESANOS',formatVersion:1,appVersion:'v21',savedAt:new Date().toISOString(),libraries:state.libraries,currentLibraryId:state.currentLibraryId,sortMode:state.sortMode,subjects};
+      const payload={app:'CARPESANOS',formatVersion:1,appVersion:'v22',savedAt:new Date().toISOString(),libraries:state.libraries,currentLibraryId:state.currentLibraryId,sortMode:state.sortMode,subjects};
       const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');const d=new Date();const stamp=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;a.href=url;a.download=`CARPESANOS_backup_${stamp}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Backup guardado.');
     }catch(e){toast('No se ha podido crear el backup.')}
   }

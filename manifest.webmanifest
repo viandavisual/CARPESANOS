@@ -3,7 +3,7 @@
   "short_name": "CARPESANOS",
   "description": "Organizador visual gratuito para convertir carpetas locales en carpesanos digitales.",
   "lang": "es",
-  "id": "/carpesanos/",
+  "id": "/CARPESANOS/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
