@@ -40,7 +40,7 @@
     .app{height:100vh;min-height:0;display:flex;flex-direction:column;padding-bottom:32px}
     header{height:118px;display:flex;align-items:center;justify-content:center;padding:0;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(7,35,88,.96),rgba(4,25,66,.94));backdrop-filter:blur(18px);position:sticky;top:0;z-index:20;box-shadow:0 10px 36px rgba(0,0,0,.24)}
     .brand{display:flex;align-items:center;gap:14px}
-    .header-inner{width:min(1500px,100%);padding:0 28px;position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px}.header-sort-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2}.header-left-group{display:flex;align-items:center;gap:26px;min-width:0}.header-right{display:flex;align-items:center;gap:14px}.install-floating{position:absolute;right:28px;top:12px;transform:none}.header-library-pill{display:flex;align-items:center;gap:10px;border:1px solid rgba(103,167,255,.45);background:rgba(9,50,120,.56);border-radius:16px;padding:12px 16px;min-width:210px;box-shadow:inset 0 1px rgba(255,255,255,.08)}.header-library-pill select{flex:1;border:0;background:transparent;color:#ecf7ff;font-size:16px;font-weight:700;outline:none}.header-library-pill select option{background:#08285f;color:#fff}.header-library-icon{font-size:20px;line-height:1}.icon-btn{width:48px;height:48px;border-radius:50%;border:1px solid rgba(109,175,255,.38);background:rgba(8,39,95,.46);color:#e7f5ff;display:grid;place-items:center;font-size:20px;box-shadow:0 10px 24px rgba(0,0,0,.16)}.icon-btn:hover{background:rgba(14,58,134,.72)}.profile-btn{overflow:hidden;padding:0;font-size:18px}.profile-btn img{width:100%;height:100%;object-fit:cover;display:none}.profile-btn.has-image img{display:block}.profile-btn.has-image span{display:none}
+    .header-inner{width:min(1500px,100%);padding:0 28px;position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px}.header-sort-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2}.header-left-group{display:flex;align-items:center;gap:26px;min-width:0}.header-right{display:flex;align-items:center;gap:14px}.install-floating{display:none!important}.header-library-pill{display:flex;align-items:center;gap:10px;border:1px solid rgba(103,167,255,.45);background:rgba(9,50,120,.56);border-radius:16px;padding:12px 16px;min-width:210px;box-shadow:inset 0 1px rgba(255,255,255,.08)}.header-library-pill select{flex:1;border:0;background:transparent;color:#ecf7ff;font-size:16px;font-weight:700;outline:none}.header-library-pill select option{background:#08285f;color:#fff}.header-library-icon{font-size:20px;line-height:1}.icon-btn{width:48px;height:48px;border-radius:50%;border:1px solid rgba(109,175,255,.38);background:rgba(8,39,95,.46);color:#e7f5ff;display:grid;place-items:center;font-size:20px;box-shadow:0 10px 24px rgba(0,0,0,.16)}.icon-btn:hover{background:rgba(14,58,134,.72)}.profile-btn{overflow:hidden;padding:0;font-size:18px}.profile-btn img{width:100%;height:100%;object-fit:cover;display:none}.profile-btn.has-image img{display:block}.profile-btn.has-image span{display:none}
     .brand-mark{width:72px;height:72px;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.22),0 16px 34px rgba(0,31,92,.42),0 0 26px rgba(84,234,255,.24)}
     .brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
     .brand h1{margin:0;font-size:44px;letter-spacing:.075em;font-weight:700;line-height:1}
@@ -186,7 +186,7 @@
     @media(max-width:850px){html,body{overflow:auto}.app{height:auto;min-height:100vh}.app-footer{position:static}.shelf-wrap{height:auto;max-height:none}.shelf{height:560px}.subject-shell{grid-template-columns:1fr}.subject-side{position:static;display:grid;grid-template-columns:140px 1fr;gap:16px}.subject-cover{height:180px}.stack{grid-column:1/-1;grid-template-columns:1fr 1fr}.hero{align-items:flex-start;flex-direction:column}.support-pill{white-space:normal}.file-grid{--cell-h:125px}.thumb{height:84px}}
     @media(max-width:560px){header{padding:0;height:auto;min-height:104px}.header-inner{padding:14px 12px;align-items:flex-start;flex-direction:column;gap:12px}.header-left-group,.header-right{width:100%}.header-sort-center{position:static;transform:none;width:100%;order:3}.header-sort-center .shelf-toolbar{width:100%;justify-content:space-between}.header-left-group{gap:12px}.brand h1{font-size:26px}.brand small{font-size:12px}.brand-mark{width:56px;height:56px}.new-large{padding:13px 18px;font-size:14px}main{padding:16px 12px 44px}.hero{flex-direction:column;align-items:flex-start}.hero-copy-main h2{font-size:34px}.hero-copy-main p{font-size:13px}.shelf-toolbar{width:100%}.subject-side{grid-template-columns:100px 1fr}.subject-cover{height:140px}.file-grid-shell{padding:7px}.file-grid{--cell-h:112px;--gap:7px}.thumb{height:75px}.file-name{font-size:9px}.file-info{padding:6px}}
 
-    /* v22 · intro + motion */
+    /* v23 · intro + motion */
     .startup-splash{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#0b64dc 0,#063b94 36%,#031d50 68%,#02122f 100%);opacity:1;visibility:visible;transition:opacity .38s ease,visibility .38s ease}
     .startup-core{position:relative;width:312px;height:312px;display:grid;place-items:center;transform:scale(1);opacity:1}
     .startup-logo{width:224px;height:224px;border-radius:52px;object-fit:cover;box-shadow:0 28px 76px rgba(0,16,62,.50),0 0 54px rgba(84,234,255,.30);animation:startupBreath .75s ease-in-out infinite alternate}
@@ -217,7 +217,7 @@
         .subject-cover.has-avatar .label,.subject-cover .label{display:none!important}
     @media (prefers-reduced-motion:reduce){.startup-spinner{animation:none}.startup-logo{animation:none}.startup-splash.exit .startup-core{animation:none;opacity:0}body.ui-ready .app,body.ui-ready .app-footer,body.ui-ready header .header-left-group,body.ui-ready header .header-right,body.ui-ready header .header-sort-center,body.ui-ready .shelf-wrap,.binder.entry-animate,.subjectViewEntry .subject-side,.subjectViewEntry .content-panel{animation:none!important;opacity:1!important;transform:none!important}}
 
-    /* v22 · shelf animation lifecycle + sidebar refinement */
+    /* v23 · shelf animation lifecycle + sidebar refinement */
     .subject-side{
       padding:14px;
       gap:10px;
@@ -338,7 +338,7 @@
     }
 
 
-    /* v22 · sidebar vertical hierarchy */
+    /* v23 · sidebar vertical hierarchy */
     .subject-profile-card{
       display:flex!important;
       flex-direction:column!important;
@@ -390,7 +390,7 @@
     }
 
 
-    /* v22 · CONFIGURAR must never invade the profile image */
+    /* v23 · CONFIGURAR must never invade the profile image */
     .subject-profile-card,
     .subject-summary,
     .linked-volumes,
@@ -421,7 +421,7 @@
     }
 
 
-    /* v22 */
+    /* v23 */
     .profile-static{cursor:default!important;user-select:none}
     .profile-static:hover{background:rgba(8,39,95,.46)!important}
     .settings-section{margin-top:18px;padding:14px;border:1px solid rgba(115,180,255,.16);border-radius:15px;background:linear-gradient(180deg,rgba(14,59,128,.52),rgba(6,31,78,.56))}
@@ -434,7 +434,7 @@
     audio.preview-media{width:min(760px,calc(100vw - 48px));min-height:54px;background:transparent;box-shadow:none}
 
 
-    /* v22 · public ready */
+    /* v23 · public ready */
     .public-info-section{padding-bottom:13px}
     .public-info-section .settings-section-copy strong{color:#eef8ff}
     .public-info-grid{display:grid;gap:8px;margin-top:10px}
@@ -455,6 +455,41 @@
     }
     .vianda-link:hover{color:#fff;text-decoration:underline}
 
+
+    /* v23 · install button integrated in header flow */
+    .header-inner{
+      grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+      align-items:center;
+    }
+    .header-right{
+      justify-self:end;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:nowrap;
+      min-width:0;
+    }
+    .install-inline{
+      flex:0 0 auto;
+      padding:11px 16px;
+      border-radius:13px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.06em;
+      background:linear-gradient(180deg,#ffe45b,#ffc51f);
+      color:#09204a;
+      border-color:transparent;
+      box-shadow:0 8px 22px rgba(255,204,32,.20);
+      white-space:nowrap;
+    }
+    .install-inline:hover{background:linear-gradient(180deg,#fff07f,#ffd23a)}
+    @media(max-width:1100px){
+      .header-inner{grid-template-columns:1fr;gap:12px;padding-top:12px;padding-bottom:12px}
+      .header-left-group,.header-sort-center,.header-right{justify-self:stretch}
+      .header-right{justify-content:flex-end;flex-wrap:wrap}
+      header{height:auto;min-height:118px}
+    }
+
   </style>
 </head>
 <body>
@@ -474,11 +509,11 @@
       </div>
       <div class="header-sort-center"><div class="shelf-toolbar"><label for="sortModeSelect">Ordenar por</label><select id="sortModeSelect"><option value="manual">Manual</option><option value="alpha-asc">Nombre · A-Z</option><option value="alpha-desc">Nombre · Z-A</option><option value="date-asc">Fecha · ascendente</option><option value="date-desc">Fecha · descendente</option><option value="grade-asc">Nota · ascendente</option><option value="grade-desc">Nota · descendente</option></select></div></div>
       <div class="header-right">
+        <button class="btn install-inline" id="installBtn" hidden>INSTALAR</button>
         <div class="header-library-pill"><span class="header-library-icon">🏛</span><select id="librarySelect" aria-label="Biblioteca actual"></select></div>
         <button class="icon-btn" id="manageLibrariesBtn" title="Bibliotecas">⚙</button>
         <div class="icon-btn profile-btn profile-static" id="libraryLogoBtn" aria-label="Imagen de la biblioteca"><img id="libraryLogoImg" alt=""><span id="libraryLogoFallback">B</span></div>
       </div>
-      <button class="btn ghost install-floating" id="installBtn" hidden>INSTALAR</button>
     </div>
   </header>
 
@@ -526,7 +561,7 @@
     </section>
   </main>
 </div>
-<footer class="app-footer">© <a href="https://www.viandavisual.com" target="_blank" rel="noopener">Vianda Visual</a> 2026 · v22</footer>
+<footer class="app-footer">© <a href="https://www.viandavisual.com" target="_blank" rel="noopener">Vianda Visual</a> 2026 · v23</footer>
 
 <div class="modal-backdrop" id="modalBackdrop">
   <div class="modal">
@@ -668,7 +703,7 @@ function syncCurrentProjectUI(){const checked=!!$('#editCurrentProjectInput')?.c
   function exportBackup(){
     try{
       const subjects=state.subjects.map(({handle,...rest})=>rest);
-      const payload={app:'CARPESANOS',formatVersion:1,appVersion:'v22',savedAt:new Date().toISOString(),libraries:state.libraries,currentLibraryId:state.currentLibraryId,sortMode:state.sortMode,subjects};
+      const payload={app:'CARPESANOS',formatVersion:1,appVersion:'v23',savedAt:new Date().toISOString(),libraries:state.libraries,currentLibraryId:state.currentLibraryId,sortMode:state.sortMode,subjects};
       const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');const d=new Date();const stamp=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;a.href=url;a.download=`CARPESANOS_backup_${stamp}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Backup guardado.');
     }catch(e){toast('No se ha podido crear el backup.')}
   }
